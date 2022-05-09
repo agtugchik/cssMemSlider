@@ -1,0 +1,83 @@
+  .container {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    background: gray;
+  }
+
+  .title {
+    margin: 0 auto  ;
+    line-height: 2em;
+    width: 260px;
+
+  }
+
+  input {
+    display: none;
+  }
+
+  .overflow {
+    width: 100%;  
+    overflow: hidden;
+  }
+  .slider {
+    width: 500%;
+    transition: 0.3s;
+  }
+  .slide {
+    float: left;
+    width: 20%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #radio1:checked ~ .overflow .slider {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .overflow .slider {
+    margin-left: -100%;
+  }
+  #radio3:checked ~ .overflow .slider {
+    margin-left: -200%;
+  }
+  #radio4:checked ~ .overflow .slider {
+    margin-left: -300%;
+  }
+  #radio5:checked ~ .overflow .slider {
+    margin-left: -400%;
+  }
+
+  .navigation {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: red;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .button:hover,
+  .button:hover,
+  .button:hover,
+  .button:hover,
+  .button:hover {
+    background: green;
+  }
+
+  #radio1:checked ~ .navigation label:nth-child(1),
+  #radio2:checked ~ .navigation label:nth-child(2),
+  #radio3:checked ~ .navigation label:nth-child(3),
+  #radio4:checked ~ .navigation label:nth-child(4),
+  #radio5:checked ~ .navigation label:nth-child(5) {
+    background-color: yellow;
+  }
