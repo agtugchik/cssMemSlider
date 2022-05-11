@@ -9,7 +9,7 @@
   .title {
     margin: 0 auto  ;
     line-height: 2em;
-    width: 260px;
+    text-align: center;
 
   }
 
@@ -51,33 +51,37 @@
   }
 
   .navigation {
-    width: 200px;
+    width: 14.2857rem;
     margin: 0 auto;
     display: flex;
   }
 
   .button {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: red;
-    transition: 0.3s;
+    width: 2.8571rem;
+    height: 2.8571rem;
     cursor: pointer;
-  }
-  .button:hover,
-  .button:hover,
-  .button:hover,
-  .button:hover,
-  .button:hover {
-    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  #radio1:checked ~ .navigation label:nth-child(1),
-  #radio2:checked ~ .navigation label:nth-child(2),
-  #radio3:checked ~ .navigation label:nth-child(3),
-  #radio4:checked ~ .navigation label:nth-child(4),
-  #radio5:checked ~ .navigation label:nth-child(5) {
+  .circle {
+    width: 1.4286rem;
+    height: 1.4286rem;
+    background-color: red;
+    border-radius: 0.7143rem;
+    transition: 0.3s;
+  }
+
+  .button:hover .circle {
+    background-color: green;
+    
+  }
+
+  #radio1:checked ~ .navigation label:nth-child(1) .circle,
+  #radio2:checked ~ .navigation label:nth-child(2) .circle,
+  #radio3:checked ~ .navigation label:nth-child(3) .circle,
+  #radio4:checked ~ .navigation label:nth-child(4) .circle,
+  #radio5:checked ~ .navigation label:nth-child(5) .circle {
     background-color: yellow;
   }
