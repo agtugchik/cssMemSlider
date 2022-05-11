@@ -4,17 +4,31 @@
     margin: 0 auto;
     padding: 0 40px;
     background: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "slider-mems slider-mems"
+    "slider-subtitles navigaion";
+  }
+
+  input {
+    appearance: none;
   }
 
   .title {
     margin: 0 auto  ;
     line-height: 2em;
     text-align: center;
-
+    grid-area: title;
   }
 
-  input {
-    display: none;
+  #slider-mems {
+    grid-area: slider-mems;
+  }
+
+  #slider-subtitles {
+    grid-area: slider-subtitles;
   }
 
   .overflow {
@@ -54,6 +68,7 @@
     width: 14.2857rem;
     margin: 0 auto;
     display: flex;
+    grid-area: navigaion;
   }
 
   .button {
