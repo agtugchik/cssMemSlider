@@ -8,10 +8,10 @@ body {
 }
 
 .container {
-  max-width: 91.4286rem;
+  max-width: 68.5714rem;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 7.1429rem;
+  padding: 0 2.8571rem;
   background: gray;
   display: grid;
   grid-template-rows: min-content min-content min-content;
@@ -34,7 +34,7 @@ input {
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0 auto;
   line-height: 2em;
   text-align: center;
